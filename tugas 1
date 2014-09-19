@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+//MENGURUTKAN ANGKA DARI KECIL KE BESAR
+
+main()
+{
+    int a, b, c, d;
+
+    printf("MENGURUTKAN ANGKA DARI KECIL KE BESAR\n\n");
+    printf("Nilai A : ");
+    scanf("%d", &a);
+    printf("Nilai B : ");
+    scanf("%d", &b);
+    printf("Nilai C : ");
+    scanf("%d", &c);
+
+    if (a>b){d=a;a=b;b=d;}
+    if (a>c){d=a;a=c;c=d;}
+    if (b>c){d=b;b=c;c=d;}
+    printf("HASIL >>>> %d %d %d", a, b, c);
+
+}
